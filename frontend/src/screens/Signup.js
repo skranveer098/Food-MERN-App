@@ -21,7 +21,7 @@ export default function Signup() {
     // console.log(latlong)
     let [lat, long] = latlong
     console.log(lat, long)
-    const response = await fetch("https://food-mern-app.vercel.app/", {
+    const response = await fetch("https://food-mern-app.vercel.app/api/auth/getlocation", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://food-mern-app.vercel.app/", {
+    const response = await fetch("https://food-mern-app.vercel.app/api/auth/createuser", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
