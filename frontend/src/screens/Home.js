@@ -11,7 +11,7 @@ export default function Home() {
 
   const loadFoodItems = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/auth/foodData", {
+      let response = await fetch("https://food-mern-app.vercel.app/api/auth/foodData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
