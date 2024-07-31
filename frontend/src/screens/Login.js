@@ -7,7 +7,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch("https://food-mern-app.vercel.app/", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
