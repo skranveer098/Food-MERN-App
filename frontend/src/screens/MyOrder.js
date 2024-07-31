@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'));
-        await fetch("http://localhost:5000/api/auth/myOrderData", {
+        await fetch("https://food-mern-app.vercel.app/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
