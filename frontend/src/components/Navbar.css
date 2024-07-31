@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.custom-navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+}
+
+.custom-navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffd700 !important; /* Golden color on hover */
+}
+
+.custom-navbar .custom-btn {
+    background-color: #fff;
+    color: #ff7e5f;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .custom-btn:hover {
+    background-color: #ffd700;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.custom-navbar .btn {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.custom-navbar .shopping-cart-icon {
+    position: relative;
+    top: 2px;
+}
+
+.custom-navbar .badge {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+    .custom-navbar {
+        text-align: center;
+    }
+}
